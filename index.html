@@ -192,14 +192,14 @@
           <div class="navbar-nav me-auto mb-4 mb-sm-0">
           </div>
           <ul class="navbar-nav me-auto mb-4 mb-sm-0" style="font-size: 19px;">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Use Cases</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#docs">Docs</a></li>
           </ul>
           <ul class="navbar-nav me-auto mb-4 mb-sm-0" style="font-size: 19px;">
-            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#comingsoon">Pricing</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="mailto:pydevog@gmail.com">Contact</a></li>
           </ul>
           <ul class="navbar-nav me-auto mb-4 mb-sm-0" style="font-size: 19px;">
             <a class="nav-link" href="https://github.com/JaminCO" target="_blank"><button type="button" class="btn btn-outline-secondary btn-lg px-4"><i class="bi bi-github"></i></button></a>
@@ -211,7 +211,7 @@
 
 
     <!-- HERO SECTION -->
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <div class="px-4 pt-5 my-5 text-center border-bottom" id="hero">
         <!-- <h1 class="display-4 fw-bold text-body-emphasis" style="font-family: Rubik Doodle Shadow;">Qrdini</h1> -->
         <div class="col-lg-6 mx-auto">
           <h3 class="">
@@ -219,7 +219,7 @@
           </h3>
           <br>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <a class="nav-link" href="#signin" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Get Started</button></a>
+            <a class="nav-link" href="#signin" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Get Early Access</button></a>
             <a class="nav-link" href="#product-demo"><button type="button" class="btn btn-outline-secondary btn-lg px-4"><i class="bi bi-play-fill"></i>Demo Product</button></a>
           </div>
           <div class="overflow-hidden">
@@ -232,7 +232,8 @@
     
     <div class="b-example-divider"></div>
   
-    <div class="third">
+    <!-- ABOUT -->
+    <div class="third" id="about">
       <div class="card text-center">
         <div class="card-header">
           About
@@ -250,8 +251,8 @@
           </p>
           <div class="third">
             <p class="d-flex justify-content-md-start justify-content-md-center lead fw-normal">
-              <a href="/docs/5.3/getting-started/download/" class="icon-link icon-link-hover fw-semibold ps-md-4">
-                Read installation docs
+              <a href="https://github.com/JaminCO/JQuickR-API/blob/main/README.md" class="icon-link icon-link-hover fw-semibold ps-md-4">
+                Read how to use
                 <svg class="bi"><use xlink:href="#arrow-right"></use></svg>
               </a>
             </p>
@@ -259,50 +260,7 @@
         </div>
       </div>
     </div>
-
-    <!-- FEATURES -->
-    <div class="container px-4 py-5" id="features">
-        <h2 class="pb-2 border-bottom">Features</h2>
     
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-          <div class="col d-flex align-items-start">
-                <div class="card h-100" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-chat-left-text"></i> Message Input</h5>
-                        <p class="card-text">Users can effortlessly specify the message they wish to embed in the QR code using query parameters.</p>
-                    </div>
-                </div>
-          </div>
-          <div class="col d-flex align-items-start">
-                <div class="card h-100" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-qr-code"></i> QR Code Generation</h5>
-                        <p class="card-text">The API dynamically crafts QR code images based on the user-provided messages.</p>
-                    </div>
-                </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="card h-100" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-cloud-upload"></i> Cloud Storage</h5>
-                    <p class="card-text">All generated QR code images are securely preserved on a reliable cloud service provider, ensuring data integrity and accessibility.</p>
-                </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="card h-100" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-link-45deg"></i> URL Provision</h5>
-                    <p class="card-text">The API returns a URL or location, simplifying user access to and distribution of the created QR code images.</p>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="b-example-divider"></div>
-    
-    <!-- ABOUT -->  
     <main>
       <div class="container py-4">
     
@@ -355,6 +313,49 @@
       </div>
     </main>
 
+      <!-- FEATURES -->
+      <div class="container px-4 py-5" id="features">
+        <h2 class="pb-2 border-bottom">Features</h2>
+    
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+                <div class="card h-100" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-chat-left-text"></i> Message Input</h5>
+                        <p class="card-text">Users can effortlessly specify the message they wish to embed in the QR code using query parameters.</p>
+                    </div>
+                </div>
+          </div>
+          <div class="col d-flex align-items-start">
+                <div class="card h-100" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-qr-code"></i> QR Code Generation</h5>
+                        <p class="card-text">The API dynamically crafts QR code images based on the user-provided messages.</p>
+                    </div>
+                </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="card h-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-cloud-upload"></i> Cloud Storage</h5>
+                    <p class="card-text">All generated QR code images are securely preserved on a reliable cloud service provider, ensuring data integrity and accessibility.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="card h-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-link-45deg"></i> URL Provision</h5>
+                    <p class="card-text">The API returns a URL or location, simplifying user access to and distribution of the created QR code images.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+  
+    <!-- CTA -->
     <div class="container my-5">
       <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
         <svg class="bi mt-5 mb-3" width="48" height="48"><use xlink:href="#check2-circle"></use></svg>
@@ -367,23 +368,27 @@
           <br>
           <strong>Qrdini – Where Effortless QR Code Creation Meets Infinite Possibilities.</strong>
         </p>
-        <button class="btn btn-primary px-5 mb-5" type="button">
-          Call to action
-        </button>
+        <a href="https://github.com/JaminCO/JQuickR-API/blob/main/README.md" target="_blank" style="text-decoration: none;"><button class="btn btn-primary px-5 mb-5" type="button">
+           Start Building
+        </button></a>
       </div>
     </div>
 
+    <div class="b-example-divider"></div>
+    <hr>
+
+    
 
     <!-- FOOTER -->
 
     <div class="container">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="#hero" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#features" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#comingsoon" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#commingsoon" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About</a></li>
           </ul>
           <p class="text-center text-body-secondary">© 2023 Made by <a href="https://twitter.com/jaminonuegbu" target="_blank">Jamin</a></p>
         </footer>
